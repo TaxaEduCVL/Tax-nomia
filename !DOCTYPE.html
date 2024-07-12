@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Personal de El Taxónomo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Color de fondo azul claro */
+            color: #333; /* Color de texto gris oscuro */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #7fff00; /* Color de fondo verde lima */
+            color: #fff; /* Color de texto blanco */
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            background-color: #adff2f; /* Color de fondo verde lima claro */
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff; /* Color de texto blanco */
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 1rem;
+            text-align: justify;
+        }
+        .animal {
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            background-color: #f5f5dc; /* Color de fondo beige claro */
+            cursor: pointer;
+        }
+        .animal:hover {
+            background-color: #ffffe0; /* Color de fondo amarillo claro al pasar el ratón */
+        }
+        .animal h2 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #7fff00; /* Color de fondo verde lima */
+            color: #fff; /* Color de texto blanco */
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Página Web Personal de El Taxónomo</h1>
+        <p>Divulgación de Taxonomía inspirada en Carlos von Linneo</p>
+    </header>
+    
+    <nav>
+        <a href="#taxonomia">Taxonomía</a>
+        <a href="#galeria">Galería</a>
+        <a href="#animal-del-dia">Animal del Día</a>
+        <a href="#encuestas">Encuestas</a>
+    </nav>
+
+    <div class="content" id="taxonomia">
+        <h2>Taxonomía</h2>
+        <p>Aquí encontrarás textos informativos sobre taxonomía, inspirados en el trabajo de Carlos von Linneo.</p>
+        <p>Carlos von Linneo fue un científico sueco conocido como el padre de la taxonomía moderna.</p>
+    </div>
+
+    <div class="content" id="galeria">
+        <h2>Galería</h2>
+        <p>A continuación, puedes disfrutar de una selección de fotos y videos relacionados con la diversidad animal y la taxonomía.</p>
+        <!-- Ejemplo de video -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+    </div>
+
+    <div class="content" id="animal-del-dia">
+        <h2>Animal del Día</h2>
+        <p>Selecciona un animal para aprender más sobre él:</p>
+
+        <!-- Ejemplo de animal -->
+        <div class="animal" onclick="mostrarInfoAnimal('león')">
+            <h2>León</h2>
+            <p>Click para aprender más sobre el león.</p>
+        </div>
+
+        <!-- Camello -->
+        <div class="animal" onclick="mostrarInfoAnimal('camello')">
+            <h2>Camello</h2>
+            <p>Click para aprender más sobre el camello.</p>
+        </div>
+
+        <!-- Lobo -->
+        <div class="animal" onclick="mostrarInfoAnimal('lobo')">
+            <h2>Lobo</h2>
+            <p>Click para aprender más sobre el lobo.</p>
+        </div>
+
+        <!-- Topo -->
+        <div class="animal" onclick="mostrarInfoAnimal('topo')">
+            <h2>Topo</h2>
+            <p>Click para aprender más sobre el topo.</p>
+        </div>
+
+        <!-- Rana -->
+        <div class="animal" onclick="mostrarInfoAnimal('rana')">
+            <h2>Rana</h2>
+            <p>Click para aprender más sobre la rana.</p>
+        </div>
+
+        <!-- Canguro -->
+        <div class="animal" onclick="mostrarInfoAnimal('canguro')">
+            <h2>Canguro</h2>
+            <p>Click para aprender más sobre el canguro.</p>
+        </div>
+
+        <!-- Hámster -->
+        <div class="animal" onclick="mostrarInfoAnimal('hámster')">
+            <h2>Hámster</h2>
+            <p>Click para aprender más sobre el hámster.</p>
+        </div>
+
+        <!-- Conejo -->
+        <div class="animal" onclick="mostrarInfoAnimal('conejo')">
+            <h2>Conejo</h2>
+            <p>Click para aprender más sobre el conejo.</p>
+        </div>
+
+        <!-- Asno -->
+        <div class="animal" onclick="mostrarInfoAnimal('asno')">
+            <h2>Asno</h2>
+            <p>Click para aprender más sobre el asno.</p>
+        </div>
+
+        <!-- Lagartija -->
+        <div class="animal" onclick="mostrarInfoAnimal('lagartija')">
+            <h2>Lagartija</h2>
+            <p>Click para aprender más sobre la lagartija.</p>
+        </div>
+
+        <!-- Becerro -->
+        <div class="animal" onclick="mostrarInfoAnimal('becerro')">
+            <h2>Becerro</h2>
+            <p>Click para aprender más sobre el becerro.</p>
+        </div>
+
+        <!-- Alacrán -->
+        <div class="animal" onclick="mostrarInfoAnimal('alacrán')">
+            <h2>Alacrán</h2>
+            <p>Click para aprender más sobre el alacrán.</p>
+        </div>
+
+        <!-- Mandril -->
+        <div class="animal" onclick="mostrarInfoAnimal('mandril')">
+            <h2>Mandril</h2>
+            <p>Click para aprender más sobre el mandril.</p>
+        </div>
+
+        <!-- Armadillo -->
+        <div class="animal" onclick="mostrarInfoAnimal('armadillo')">
+            <h2>Armadillo</h2>
+            <p>Click para aprender más sobre el armadillo.</p>
+        </div>
+
+        <!-- Caimán -->
+        <div class="animal" onclick="mostrarInfoAnimal('caimán')">
+            <h2>Caimán</h2>
+            <p>Click para aprender más sobre el caimán.</p>
+        </div>
+
+        <!-- Oso -->
+        <div class="animal" onclick="mostrarInfoAnimal('oso')">
+            <h2>Oso</h2>
+            <p>Click para aprender más sobre el oso.</p>
+        </div>
+    </div>
+
+    <div class="content" id="encuestas">
+        <h2>Encuestas</h2>
+        <p>Participa en nuestras encuestas para sugerir temas de nuevos artículos sobre animales.</p>
+        <form>
+            <label for="animal-favorito">¿Cuál es tu animal favorito?</label><br>
+            <input type="text" id="animal-favorito" name="animal-favorito"><br><br>
+            <label for="sugerencia-articulo">Sugerencia para nuevo artículo:</label><br>
+            <textarea id="sugerencia-articulo" name="sugerencia-articulo" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Página Web Personal de El Taxónomo</p>
+    </footer>
+
+    <script>
+        function mostrarInfoAnimal(animal) {
+            // Aquí puedes implementar la lógica para mostrar la información del animal seleccionado
+            // Por ejemplo, podrías mostrar un cuadro modal o redirigir a otra página con la información detallada.
+            alert(`Aquí encontrarías la información sobre el ${animal}.`);
+        }
+    </script>
+</body>
+</html>
